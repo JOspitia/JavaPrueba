@@ -16,7 +16,7 @@ abstract class Registro{
 	}
 }
 
-public class Formulario{
+class Formulario extends Registro{
 	public preguntar(){
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Ingresa Nombre de Usuario");
@@ -32,7 +32,7 @@ public class Formulario{
 	}
 }
 
-public class Repuesta{
+class Repuesta extends Registro{
 	public mostrar(){
 		Persona obP = Persona();
 		System.out.println("Datos de Registro:");
@@ -43,7 +43,7 @@ public class Repuesta{
 
 }
 
-public class Persona{
+class Persona  extends Registro{
 	private String nombre;
 	private String edad;
 	private int telefono;
